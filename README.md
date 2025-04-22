@@ -17,16 +17,6 @@ Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 | B1        | CRUD Order           | 8001         | -                    | `php artisan serve --port=8001`                 |
 | B2        | Show Product         | 8002         | 5174                 | `php artisan serve --port=8002` + `npm run dev --port=5174` |
 
-## ⚙️ Instalasi & Setup
-
-Lakukan untuk setiap folder service:
-
-```bash
-composer install
-npm install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate
 
 ## 🧩 Integrasi Antar Service
 
@@ -60,3 +50,15 @@ php artisan migrate
   - Laravel **Sanctum** atau **Passport** (untuk autentikasi API)
   - **Redis Queue** atau **Laravel Scheduler** (untuk sinkronisasi background)
   - **WebSocket / Laravel Echo** (untuk real-time update)
+
+## ⚙️ Instalasi & Setup
+
+Lakukan untuk setiap folder service:
+
+```bash
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+
