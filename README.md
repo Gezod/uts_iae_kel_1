@@ -27,35 +27,36 @@ npm install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
-🧩 Integrasi Antar Service
-Service A:
 
-Login & Register
+## 🧩 Integrasi Antar Service
 
-Menampilkan data dari Service B (Order)
+### 🔐 Service A (Main Interface)
+- Menyediakan fitur Login & Register
+- Mengambil dan menampilkan data Order dari Service B
+- Mengambil dan menampilkan data Product dari Service C
 
-Menampilkan data dari Service C (Product)
+### 📦 Service B1 (Order Service)
+- Menyediakan API CRUD untuk data Order
+- Perubahan Order akan otomatis tercermin di tampilan Service A
 
-Service B:
+### 🛍️ Service B2 (Product Service)
+- Menyediakan daftar produk (Product Viewer)
+- Perubahan data produk akan langsung diperbarui di Service A
 
-CRUD Order
+---
 
-Update otomatis ditampilkan di Service A
+## 🔗 Contoh Endpoint API
 
-Service C:
+- `GET http://localhost:8001/api/orders` → (Order dari Service B)  
+- `GET http://localhost:8002/api/products` → (Product dari Service C)
 
-Show Product
+---
 
-Perubahan produk otomatis update di Service A
+## 📌 Catatan
 
-🔗 Contoh API Endpoint
-Orders: http://localhost:8001/api/orders
-
-Products: http://localhost:8002/api/products
-
-📌 Catatan
-Masing-masing service memiliki .env dan database sendiri.
-
-Pastikan CORS sudah diatur agar komunikasi antar service berjalan lancar.
-
-Rekomendasi integrasi lanjutan: Laravel Sanctum/Passport, Redis Queue, Laravel Scheduler, atau WebSocket.
+- Masing-masing service memiliki file `.env` dan database yang terpisah.
+- Pastikan konfigurasi **CORS** sudah sesuai agar komunikasi antar service berjalan lancar.
+- Untuk pengembangan lanjutan, direkomendasikan menggunakan:
+  - Laravel **Sanctum** atau **Passport** (untuk autentikasi API)
+  - **Redis Queue** atau **Laravel Scheduler** (untuk sinkronisasi background)
+  - **WebSocket / Laravel Echo** (untuk real-time update)
