@@ -3,8 +3,8 @@
 Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 
 - **Service A** – Autentikasi (Register & Login) + Integrasi tampilan Order & Product
-- **Service B** – CRUD Order
-- **Service C** – Tampilkan Produk
+- **Service B1** – CRUD Order
+- **Service B2** – Tampilkan Produk
 
 ## 🧱 Struktur Folder
 
@@ -14,8 +14,8 @@ Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 | Service   | Fungsi               | Port Laravel | Port Frontend (Vite) | Jalankan dengan                                 |
 |-----------|----------------------|--------------|----------------------|--------------------------------------------------|
 | A         | Auth + Integrasi UI  | 8000         | 5173 (default)       | `php artisan serve` + `npm run dev`             |
-| B         | CRUD Order           | 8001         | -                    | `php artisan serve --port=8001`                 |
-| C         | Show Product         | 8002         | 5174                 | `php artisan serve --port=8002` + `npm run dev --port=5174` |
+| B1        | CRUD Order           | 8001         | -                    | `php artisan serve --port=8001`                 |
+| B2        | Show Product         | 8002         | 5174                 | `php artisan serve --port=8002` + `npm run dev --port=5174` |
 
 ## ⚙️ Instalasi & Setup
 
