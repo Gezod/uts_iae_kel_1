@@ -22,8 +22,8 @@ Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 
 ### 🔐 Service A (Main Interface)
 - Menyediakan fitur Login & Register
-- Mengambil dan menampilkan data Order dari Service B
-- Mengambil dan menampilkan data Product dari Service C
+- Mengambil dan menampilkan data Order dari Service B1
+- Mengambil dan menampilkan data Product dari Service B2
 
 ### 📦 Service B1 (Order Service)
 - Menyediakan API CRUD untuk data Order
@@ -37,8 +37,8 @@ Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 
 ## 🔗 Contoh Endpoint API
 
-- `GET http://localhost:8001/api/orders` → (Order dari Service B)  
-- `GET http://localhost:8002/api/products` → (Product dari Service C)
+- `GET http://localhost:8001/api/orders` → (Order dari Service B1)  
+- `GET http://localhost:8002/api/products` → (Product dari Service B2)
 
 ---
 
