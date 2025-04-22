@@ -58,6 +58,7 @@ Lakukan untuk setiap folder service:
 ```bash
 composer install
 npm install
+npm install boostrap-icons boostrap
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
