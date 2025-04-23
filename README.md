@@ -1,10 +1,16 @@
 # Laravel Integration Service (3-Service Architecture)
 
+Nama Kelompok 1
+Anggota : 
+Refangga Lintar Prayoga (1204220137)
+Amiralutfia Desy Ramadhani (1204220060)
+
 Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 
 - **Service A** – Autentikasi (Register & Login) + Integrasi tampilan Order & Product
 - **Service B1** – CRUD Order
 - **Service B2** – Tampilkan Produk
+- 
 
 ## 🧱 Struktur Folder
 
