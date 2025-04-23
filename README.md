@@ -4,6 +4,7 @@ Nama Kelompok 1
 Anggota : 
 Refangga Lintar Prayoga (1204220137)
 Amiralutfia Desy Ramadhani (1204220060)
+Muhammad Firdaus Garra Daeng Sikki (1204220049)
 
 Repositori ini berisi 3 layanan Laravel yang saling terintegrasi:
 
